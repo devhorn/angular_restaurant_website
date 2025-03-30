@@ -1,0 +1,36 @@
+h1 {
+  color: #ffffff;
+  font-size: 96px;
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+  font-size: 24px;
+}
+
+div {
+  width: 100%;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./../../../assets/img/1_hero/JPG/hero_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.sakuraTitle {
+  margin-top: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
