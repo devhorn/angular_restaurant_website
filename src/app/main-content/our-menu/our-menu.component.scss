@@ -1,0 +1,41 @@
+@import "./../../../styles.scss";
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 120px 0;
+  background-image: url("./../../../assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
+  > h2 {
+    font-size: 80px;
+    color: $red-font-color;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    > img {
+      height: 352px;
+      width: 352px;
+    }
+    > div {
+      > h4 {
+        font-size: 48px;
+      }
+      > div {
+        padding-top: 16px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        > div {
+          > p {
+            font-size: 32px;
+            font-weight: bold;
+            color: #675e54;
+          }
+        }
+      }
+    }
+  }
+}
