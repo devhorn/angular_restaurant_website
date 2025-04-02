@@ -1,14 +1,14 @@
 @import "./../../../styles.scss";
 
-@mixin dFlexColumn() {
+@mixin dFlex($fd: row, $jc: center, $ai: center) {
   display: flex;
-  flex-direction: column;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
 }
 
 section {
-  @include dFlexColumn();
-  justify-content: center;
-  align-items: center;
+  @include dFlex($fd: column);
   gap: 64px;
   padding: 120px 0;
   > h2 {
@@ -19,8 +19,7 @@ section {
     display: flex;
     gap: 164px;
     > div {
-      @include dFlexColumn();
-      align-items: center;
+      @include dFlex($fd: column);
       gap: 16px;
       > img {
         height: 128px;
