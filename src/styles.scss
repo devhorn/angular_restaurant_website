@@ -6,6 +6,12 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 $red-font-color: #9f0908;
 
 /* raleway-100 - latin */

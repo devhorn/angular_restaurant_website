@@ -1,8 +1,12 @@
 @import "./../../../styles.scss";
 
-section {
+@mixin dFlexColumn() {
   display: flex;
   flex-direction: column;
+}
+
+section {
+  @include dFlexColumn();
   justify-content: center;
   align-items: center;
   gap: 64px;
@@ -15,8 +19,7 @@ section {
     display: flex;
     gap: 164px;
     > div {
-      display: flex;
-      flex-direction: column;
+      @include dFlexColumn();
       align-items: center;
       gap: 16px;
       > img {
